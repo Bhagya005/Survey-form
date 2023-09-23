@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out the below survey form</p>
+    <form id="survey-form">
+     <fieldset id="field1">
+    <label id="name-label" class="field1">Name  <input type="text" id="name" placeholder="Bhagya Sureshkumar" required/></label><br>
+    <label id="email-label" class="field1">Email <input type="email" id="email" placeholder="bhagyacharuvil@gmail.com" required/></label><br>
+    <label id="number-label" class="field1">Number<input type="number" id="number" min="8000000000" max="9999999999" placeholder="9496398748"/></label>
+    <div id="line"></div>
+    </fieldset>
+    
+    <fieldset id="field2">
+    <label>Which semester are you currently in?</label>
+    <select id="dropdown">
+      
+      <option>1</option>
+      <option>3</option>
+      <option>5</option>
+      <option>7</option>
+    </select><br>
+    <label id="dept">Choose your department</label><br>
+    <label for="name"><input type="radio" name="name" class="dept" value="CS"/>CS</label>
+    <label for="name"><input type="radio" name="name" class="dept" value="ECE"/>ECE</label>
+    <label for="name"><input type="radio" name="name" class="dept" value="EEE"/>EEE</label>
+    <label for="name"><input type="radio" name="name" class="dept" value="RB"/>RB</label>
+    <div id="line"></div>
+</fieldset>
+<fieldset id="field3">
+  <label>Choose the programming languages you are most confident in.</label><br>
+  <label><input type="checkbox" id="C" value="C" class="lang"> C</label>
+  <label><input type="checkbox" id="python"  value="python" class="lang">Python</label>
+  <label><input type="checkbox" id="java" value="java" class="lang"> Java</label><br>
+  <label>Enlighten us with your passions,hobbies and dreams. <textarea rows="4" cols="40" placeholder="I love coding.."></textarea></label>
+</fieldset>
+<input type="submit" value="Submit" id="submit"/>
+    </form>
+</body>
+</html>
